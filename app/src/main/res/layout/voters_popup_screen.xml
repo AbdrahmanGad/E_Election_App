@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_gravity="center"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/corners90_gray_line">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/select_the_voter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the voters"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@id/english"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <CheckBox
+            android:id="@+id/english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_the_voter"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="English"
+            android:textSize="30dp"/>
+        <CheckBox
+            android:id="@+id/Y1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/english"
+            android:text="First year" />
+        <CheckBox
+            android:id="@+id/Y1G1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y1"
+            app:layout_constraintBottom_toTopOf="@id/Y1G3"
+            android:text="Group 1" />
+        <CheckBox
+            android:id="@+id/Y1G2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y1G1"
+            app:layout_constraintBottom_toTopOf="@id/Y1G4"
+            app:layout_constraintTop_toBottomOf="@id/Y1"
+            android:text="Group 2" />
+        <CheckBox
+            android:id="@+id/Y1G3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y1G1"
+            app:layout_constraintBottom_toTopOf="@id/Y1G5"
+            android:text="Group 3" />
+        <CheckBox
+            android:id="@+id/Y1G4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y1G3"
+            app:layout_constraintBottom_toTopOf="@id/Y1G6"
+            app:layout_constraintTop_toBottomOf="@id/Y1G2"
+            android:text="Group 4" />
+        <CheckBox
+            android:id="@+id/Y1G5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y1G3"
+            android:text="Group 5" />
+        <CheckBox
+            android:id="@+id/Y1G6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y1G5"
+            app:layout_constraintTop_toBottomOf="@id/Y1G4"
+            android:text="Group 6" />
+
+        <CheckBox
+            android:id="@+id/BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y1G5"
+            app:layout_constraintRight_toLeftOf="@id/IBM"
+            android:text="BIS"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/Y2BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/BIS"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y2G1BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2BIS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y2G2BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2G1BIS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y2G3BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2G2BIS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y3BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Third year"
+            app:layout_constraintTop_toBottomOf="@id/Y2G3BIS"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y3G1BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3BIS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y3G2BIS"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3G1BIS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y3G3BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3G2BIS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y4BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fourth year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3G3BIS"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y4G1BIS"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4BIS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y4G2BIS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4G1BIS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y4G3BIS"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4G2BIS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/BIS"
+            app:layout_constraintTop_toBottomOf="@id/Y1G6"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="IBM"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/Y2IBM"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Second year"
+            app:layout_constraintTop_toBottomOf="@id/IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2BIS"/>
+
+        <CheckBox
+            android:id="@+id/Y2G1IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G1BIS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y2G2IBM"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y2G1IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G2BIS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y2G3IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G2IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G3BIS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y3IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G3IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3BIS"/>
+
+        <CheckBox
+            android:id="@+id/Y3G1IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G1BIS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y3G2IBM"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y3G1IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G2BIS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y3G3IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3G2IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G3BIS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y4IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fourth year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3G3IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4BIS"/>
+
+        <CheckBox
+            android:id="@+id/Y4G1IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y4IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G1BIS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y4G2IBM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y4G1IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G2BIS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y4G3IBM"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y4G2IBM"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G3BIS"
+            android:text="Group 3"/>
+
+
+
+
+
+
+
+        <CheckBox
+            android:id="@+id/arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arabic"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y4G3BIS"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"/>
+        <CheckBox
+            android:id="@+id/banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/arabic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Banks"/>
+        <CheckBox
+            android:id="@+id/Y2Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/banks"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y2G1Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2Banks"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y2G2Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2G1Banks"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y2G3Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2G2Banks"
+            android:text="Group 3"/>
+        <CheckBox
+            android:id="@+id/Y3Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Third year"
+            app:layout_constraintTop_toBottomOf="@id/Y2G3Banks"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y3G1Banks"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3Banks"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y3G2Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3G1Banks"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y3G3Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3G2Banks"
+            android:text="Group 3"/>
+        <CheckBox
+            android:id="@+id/Y4Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Second year"
+            app:layout_constraintTop_toBottomOf="@id/Y3G3Banks"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y4G1Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4Banks"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y4G2Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4G1Banks"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y4G3Banks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4G2Banks"
+            android:text="Group 3"/>
+        <CheckBox
+            android:id="@+id/HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/arabic"
+            app:layout_constraintLeft_toRightOf="@id/banks"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="HR"/>
+
+        <CheckBox
+            android:id="@+id/Y2HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2Banks"/>
+
+        <CheckBox
+            android:id="@+id/Y2G1HR"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y2HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G1Banks"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y2G2HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G1HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G2Banks"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y2G3HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G2HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G3Banks"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y3HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G3HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3Banks"/>
+
+        <CheckBox
+            android:id="@+id/Y3G1HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G1Banks"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y3G2HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3G1HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G2Banks"
+            android:text="Group 2"/>
+        <CheckBox
+                android:id="@+id/Y3G3HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3G2HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G3Banks"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y4HR"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Fourth year"
+            app:layout_constraintTop_toBottomOf="@id/Y3G3HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4Banks"/>
+
+        <CheckBox
+            android:id="@+id/Y4G1HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y4HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G1Banks"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y4G2HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y4G1HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G2Banks"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y4G3HR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y4G2HR"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G3Banks"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/IS"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/Y4G3Banks"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Information system"/>
+        <CheckBox
+            android:id="@+id/Y2IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Second year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/IS"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y2G1IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2IS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y2G2IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y2G1IS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y2G3IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G2IS"
+            android:text="Group 3"/>
+        <CheckBox
+            android:id="@+id/Y3IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Third year"
+            app:layout_constraintTop_toBottomOf="@id/Y2G3IS"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y3G1IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3IS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y3G2IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3G1IS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y3G3IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y3G2IS"
+            android:text="Group 3"/>
+        <CheckBox
+            android:id="@+id/Y4IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y3G3IS"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <CheckBox
+            android:id="@+id/Y4G1IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4IS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y4G2IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4G1IS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y4G3IS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Y4G2IS"
+            android:text="Group 3"/>
+        <CheckBox
+            android:id="@+id/MPF"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/Y4G3HR"
+            app:layout_constraintLeft_toRightOf="@id/IS"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Management of petroleum facilities"/>
+
+        <CheckBox
+            android:id="@+id/Y2MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year"
+            app:layout_constraintTop_toBottomOf="@id/MPF"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2IS"/>
+
+        <CheckBox
+            android:id="@+id/Y2G1MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y2MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/Y2G1IS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y2G2MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y2G1MPF"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y2G2IS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y2G3MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y2G2MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/Y2G3IS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y3MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third year"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/Y2G3MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3IS"/>
+
+        <CheckBox
+            android:id="@+id/Y3G1MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y3MPF"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G1IS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y3G2MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y3G1MPF"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y3G2IS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y3G3MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y3G2MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/Y3G3IS"
+            android:text="Group 3"/>
+
+        <CheckBox
+            android:id="@+id/Y4MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fourth year"
+            app:layout_constraintTop_toBottomOf="@id/Y3G3MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4IS"/>
+
+        <CheckBox
+            android:id="@+id/Y4G1MPF"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y4MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/Y4G1IS"
+            android:text="Group 1"/>
+        <CheckBox
+            android:id="@+id/Y4G2MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y4G1MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/Y4G2IS"
+            android:text="Group 2"/>
+        <CheckBox
+            android:id="@+id/Y4G3MPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/Y4G2MPF"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/Y4G3IS"
+            android:text="Group 3"/>
+
+
+        <Button
+            android:id="@+id/BTN_submit_voters"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="submit voters"
+            app:layout_constraintTop_toBottomOf="@id/Y4G3MPF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.cardview.widget.CardView>

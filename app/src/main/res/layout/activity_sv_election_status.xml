@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Supervisor.SV_ElectionStatus"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#2F5597">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/toolbar_constraint"
+            app:layout_constraintTop_toTopOf="@id/toolbar_constraint"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_constraint"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/pageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/toolbar_constraint"
+            app:layout_constraintLeft_toRightOf="@+id/back"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_constraint"
+            android:text="Election Status"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintRight_toRightOf="@id/toolbar_constraint"
+            app:layout_constraintTop_toTopOf="@id/toolbar_constraint"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_constraint"
+            android:src="@drawable/icon_setting" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_gray_background"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/first_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/main_constraint"
+            app:layout_constraintLeft_toLeftOf="@id/main_constraint"
+            app:layout_constraintRight_toRightOf="@id/main_constraint">
+
+            <TextView
+                android:id="@+id/election_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رئيس إاتحاد الطلبة"
+                android:textColor="#666666"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/setting_election"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/setting_election"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toRightOf="@id/election_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/curved_2_2_corners_blue">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icon_setting"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/first_constraint">
+
+            <TextView
+                android:id="@+id/title_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="#2F5597"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/election_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners90_gray_line"
+                android:textColor="@color/black"
+                android:maxLength="500"
+                android:layout_margin="10dp"
+                android:padding="7dp"
+                android:text="descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondesdescriptionde"/>
+
+            <TextView
+                android:id="@+id/title_election_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/election_type"
+                android:textColor="#2F5597"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_Generate_Code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroup"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/curved_corners_gray_line"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/TV_roomType"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="65dp"
+                    android:gravity="start"
+                    android:text="Public"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_code"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corners90_gray_line"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_candidates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/candidates"
+                android:textColor="#2F5597"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RV_SV_candidate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/row_candidate_sv"/>
+
+
+            <TextView
+                android:id="@+id/title_voters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voters"
+                android:textColor="#2F5597"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_voters"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/corners90_gray_line"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. of all voters"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/ET_totalNo.OfVoters"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:text="168"
+                    android:textColor="#2F5597"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="125dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="#2F5597"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+            android:id="@+id/ll_Election_Duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:background="@drawable/corners90_gray_line">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:text="Election Duration"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Start Date"
+                    android:textSize="22sp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corners90_gray_line"
+                    android:padding="5dp"
+                    android:text="22/09/2022"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="End Date"
+                    android:textSize="22sp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/corners90_gray_line"
+                    android:text="25/10/2022"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+</ScrollView>

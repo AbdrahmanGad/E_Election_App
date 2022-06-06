@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="0dp">
+
+    <TextView
+        android:id="@+id/TV_FutureElectionInTheRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/input_one_data"
+        android:gravity="center"
+        android:text="رئيس إتحاد الطلبة"
+        android:textColor="#84878C"
+        android:textSize="20dp" />
+
+</androidx.cardview.widget.CardView>

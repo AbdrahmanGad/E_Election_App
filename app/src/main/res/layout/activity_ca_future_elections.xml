@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Candidate.CA_FutureElections"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#2F5597">
+
+        <ImageView
+            android:id="@+id/CA_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/toolbar_constraint"
+            app:layout_constraintTop_toTopOf="@id/toolbar_constraint"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_constraint"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/pageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="@id/toolbar_constraint"
+            app:layout_constraintLeft_toRightOf="@+id/CA_back"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_constraint"
+            android:text="Future Elections"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/CA_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintRight_toRightOf="@id/toolbar_constraint"
+            app:layout_constraintTop_toTopOf="@id/toolbar_constraint"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_constraint"
+            android:src="@drawable/icon_setting" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CA_RV_FutureElections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/curved_corners_blue_line"
+        android:padding="15dp"
+        tools:listitem="@layout/row_future_elections_ca"/>
+
+</LinearLayout>

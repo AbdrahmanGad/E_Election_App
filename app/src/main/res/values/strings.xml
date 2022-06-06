@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Electronic Election App</string>
+    <string name="home"><u>Home</u></string>
+    <string name="about"><u>About</u></string>
+
+    <string name="check_for_any_future_elections"><u>Check for any future elections</u></string>
+
+    <string name="candidates_data"><u>Candidates data</u></string>
+    <string name="add_future_election"><u>Add Future Election</u></string>
+
+    <string name="description"><u>Description</u></string>
+    <string name="candidates"><u>Candidates</u></string>
+    <string name="date"><u>Date</u></string>
+    <string name="election_type"><u>Election type</u></string>
+    <string name="voters"><u>Voters</u>></string>
+
+    <string-array name="common">
+
+    </string-array>
+</resources>

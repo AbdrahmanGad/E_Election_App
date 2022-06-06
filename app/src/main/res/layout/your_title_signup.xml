@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/yourTitleSupervisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Supervisor"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/yourTitleCandidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Candidate"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/yourTitleStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Student"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/doneBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="done"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+
+    </RadioGroup>
+
+
+</androidx.cardview.widget.CardView>

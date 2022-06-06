@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.electronicelectionapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/test4"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/test4"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ElectronicElectionApp.NoActionBarNoStatusBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Candidate.CA_FutureElectionDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Candidate.CA_FutureElections"
+            android:exported="false" />
+        <activity
+            android:name=".Candidate.CA_Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Candidate.CA_ElectionStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Candidate.CA_AddPrivateElection"
+            android:exported="false" />
+        <activity
+            android:name=".Student.ST_ElectionStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Student.ST_Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Student.ST_AddPrivateElection"
+            android:exported="false" />
+        <activity
+            android:name=".Supervisor.SV_AddFutureElection"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Supervisor.SV_CandidatesData"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".Supervisor.SV_Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Supervisor.SV_ElectionStatus"
+            android:exported="false" />
+        <activity
+            android:name=".Candidate.CA_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Student.ST_HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".Supervisor.SV_Preview"
+            android:exported="false" />
+        <activity
+            android:name=".Supervisor.SV_AddNewElection"
+            android:exported="false"
+            android:theme="@style/Theme.ElectronicElectionApp.NoActionBarNoStatusBar" />
+        <activity
+            android:name=".Supervisor.SV_HomePage"
+            android:exported="false"
+            android:theme="@style/Theme.ElectronicElectionApp.NoActionBarNoStatusBar" />
+        <activity
+            android:name=".beginscreen.Login"
+            android:exported="false"
+            android:theme="@style/Theme.ElectronicElectionApp.NoActionBarNoStatusBar" />
+        <activity
+            android:name=".beginscreen.SignUp"
+            android:exported="false"
+            android:theme="@style/Theme.ElectronicElectionApp.NoActionBarNoStatusBar" />
+        <activity
+            android:name=".beginscreen.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.ElectronicElectionApp.NoActionBarNoStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

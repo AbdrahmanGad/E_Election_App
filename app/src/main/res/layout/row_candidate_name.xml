@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners90_gray_line">
+
+    <TextView
+        android:id="@+id/row_Candidate_name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ahmad Mohamed Ibrahim"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
